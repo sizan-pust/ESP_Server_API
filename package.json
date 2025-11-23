@@ -3,14 +3,19 @@
   "version": "1.0.0",
   "description": "ESP32 Control Server for Flutter App",
   "main": "server.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node server.js"
   },
   "keywords": ["esp32", "flutter", "iot"],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
-    "express": "4.18.2",
-    "ws": "8.14.2"
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "socket.io": "^4.7.2"
   }
 }
